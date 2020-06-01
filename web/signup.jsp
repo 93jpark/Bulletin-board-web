@@ -29,14 +29,15 @@
             <li class="nav-item"><a class="nav-link" href="index.jsp">Main</a></li>
             <li class="nav-item"><a class="nav-link" href="bbs.jsp">Board</a></li>
         </ul>
+
         <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown mr-auto mt-2 mt-lg-0">
-                <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button"
-                   aria-expanded="false" aria-haspopup="true">Access<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="login.jsp">Login</a></li>
-                    <li class="active"><a href="signup.jsp">Sign-up</a></li>
-                </ul>
+            <li class="dropdown">
+                <div class="dropdown-toggle" href="#" data-toggle="dropdown" role="button"
+                     aria-expanded="false" aria-haspopup="true">Access<span class="caret"></span></div>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="login.jsp">Login</a>
+                    <a class="dropdown-item" href="signup.jsp">Sign-up</a>
+                </div>
             </li>
         </ul>
     </div>

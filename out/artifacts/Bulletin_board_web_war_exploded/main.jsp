@@ -33,6 +33,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- BANNER MENU LIST -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active"><a class="nav-link" href="index.jsp">Main</a></li>
@@ -41,19 +42,21 @@
         <%
             if(userID == null) {
         %>
+        <!-- UPPER RIGHT SECTION @ GUEST -->
         <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown mr-auto mt-2 mt-lg-0">
-                <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button"
-                   aria-expanded="false" aria-haspopup="true">Access<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="login.jsp">Login</a></li>
-                    <li><a href="signup.jsp">Sign-up</a></li>
-                </ul>
+            <li class="dropdown">
+                <div class="dropdown-toggle" href="#" data-toggle="dropdown" role="button"
+                   aria-expanded="false" aria-haspopup="true">Access<span class="caret"></span></div>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="login.jsp">Login</a>
+                    <a class="dropdown-item" href="signup.jsp">Sign-up</a>
+                </div>
             </li>
         </ul>
         <%
             } else {
         %>
+        <!-- UPPER RIGHT SECTION @ MEMBER ON -->
         <ul class="nav navbar-nav navbar-right">
             <li class="dropdown mr-auto mt-2 mt-lg-0">
                 <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button"
