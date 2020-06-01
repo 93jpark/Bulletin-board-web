@@ -25,19 +25,15 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.jsp">Home</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="bbs.jsp">Board</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="index.jsp">Main</a></li>
+        <li class="nav-item"><a class="nav-link" href="bbs.jsp">Board</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
           <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button"
               aria-expanded="false" aria-haspopup="true">Access<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li class="active"><a href="login.jsp">Login</a></li>
+            <li><a href="login.jsp">Login</a></li>
             <li><a href="signup.jsp">Sign-up</a></li>
           </ul>
         </li>
@@ -46,7 +42,7 @@
   </nav>
 
   <script>
-    //location.href = 'login.jsp';
+    location.href = 'main.jsp';
   </script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="./js/bootstrap.js"></script>

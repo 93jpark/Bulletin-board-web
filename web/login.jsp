@@ -26,12 +26,8 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.jsp">Home</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="bbs.jsp">Board</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="index.jsp">Main</a></li>
+            <li class="nav-item"><a class="nav-link" href="bbs.jsp">Board</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li class="dropdown mr-auto mt-2 mt-lg-0">

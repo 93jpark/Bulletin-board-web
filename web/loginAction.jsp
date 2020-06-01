@@ -20,14 +20,32 @@
 </head>
 <body>
     <%
+        String userID = null;
+        if(session.getAttribute("userID") != null) {
+            userID = (String) session.getAttribute("UserID");
+        }
+        if(userID != null) {
+            PrintWriter script = response.getWriter();
+            script.println("<script>");
+            script.println("alert('Already Signed in');");
+            script.println("location.href = 'main.jsp';");
+            script.println("</script>");
+        }
+
+
+
         UserDAO userDAO = new UserDAO();
         int result = userDAO.login(user.getUserID(), user.getUserPassword());
-        System.out.println(result);
+        //System.out.println(result);
         if (result == 1) {
             PrintWriter script = response.getWriter();
             script.println("<script>");
             script.println("location.href = 'main.jsp'");
             script.println("</script>");
+
+            // Login Session
+            session.setAttribute("userID", user.getUserID());
+            System.out.println("loginAction's getUserID"+user.getUserID());
         }
         else if (result == 0) {
             PrintWriter script = response.getWriter();
